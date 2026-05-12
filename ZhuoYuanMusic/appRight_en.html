@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Permission Application and Usage Description</title>
+
+	<style type="text/css">
+		.f16{font-size:16px;}
+		.f22{font-size:22px;}
+		.sjlz{text-indent:2em;}
+		.alignc{text-align:center;}
+		.alignr{text-align:right;}
+		.fb{font-weight:bold;}
+		.fcb{color:#0000FF}
+		
+		table{
+			border:solid 2px black;
+			width:100%;
+			border-collapse:collapse;
+			font-size:26px;
+		}
+		th{
+			border:solid 1px black;
+			padding:16px;
+		}
+		td{
+			text-align:center;
+			border:solid 1px black;
+			padding:16px;
+		}
+	</style>
+</head>
+<body>
+	<p class="f22 fb alignc">Permission Application and Usage Description</p><br>
+	<ol>
+		<li>To ensure the implementation and safe and stable operation of the product/service functions of Joymper, we may apply for or use relevant permissions of the operating system;</li>
+		<li>To protect your right to know, we have displayed the relevant operating system permissions that products/services may apply for and use through the following list. You can manage the relevant permissions according to your actual needs;</li>
+		<li>According to the upgrade of products/services, the types and purposes of permissions may be changed. We will adjust the list in time based on these changes to ensure that you are informed ASAP;</li>
+		<li>Please be aware that we may also use third-party SDKs for the functionality and security needs of our business and products/services. These third parties can also apply for or use relevant operating system permissions.</li>
+	</ol><br>
+	<h3>Permissions List</h3>
+	<p>
+		<table>
+			<tr>
+				<th style="width:25%">Name</th>
+				<th style="width:35%">Function Description</th>
+				<th style="width:40%">Usage scenario or purpose</th>
+			</tr>
+			<tr>
+				<td>INTERNET</td>
+				<td rowspan="3">Provide the function of accessing the Internet and obtaining the networking status</td>
+				<td  rowspan="3">The related services of account management  such as user registration, login, password modification, and password recovery; The detection and download of new version; Purchase registration code for payment</td>
+			</tr>
+			
+			<tr>
+				<td>ACCESS_NETWORK_STATE</td>
+			</tr>
+			
+			<tr>
+				<td>ACCESS_WIFI_STATE</td>
+			</tr>
+			
+			<tr>
+				<td>REQUEST_INSTALL_PACKAGES</td>
+				<td>Provide the function to install new version</td>
+				<td>Install new version downloaded</td>
+			</tr>
+            <tr>
+                <td>READ_EXTERNAL_STORAGE</td>
+                <td rowspan="3">Provide the function to access the mp3 files in external storage</td>
+                <td rowspan="3">Read local mp3 files for to manage and play</td>
+            </tr>
+            <tr>
+                <td>WRITE_EXTERNAL_STORAGE</td>
+            </tr>
+            <tr>
+                <td>MANAGE_EXTERNAL_STORAGE</td>
+            </tr>
+            <tr>
+				<td>WAKE_LOCK</td>
+				<td>Control CPU sleep status</td>
+				<td>Ensure the mp3 audios to play normally</td>
+			</tr>
+            <tr>
+                <td>FOREGROUND_SERVICE</td>
+                <td rowspan="3">Set the foreground service to play mp3 audios</td>
+                <td rowspan="3">Ensure that mp3 audios can still play normally without being interrupted or stopped by the system after exiting the application</td>
+            </tr>
+            <tr>
+                <td>FOREGROUND_SERVICE_MEDIA_PLAYBACK</td>
+            </tr>
+            <tr>
+                <td>POST_NOTIFICATIONS</td>
+            </tr>
+		</table>
+	</p>
+</body>
+</html>
