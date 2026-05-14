@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .TopBarFrame{
+            background-color:#4144A0;
+            padding:5px;
+            border-radius:6px;
+        }
+
+        .TopBarLogo{
+            color:white;
+            font-size:25px;
+            margin-bottom:3px;
+        }
+
+        .TopBarNav{
+            color:black;
+            font-size:12px;
+            padding-left:6px;
+            padding-right:6px;
+            padding-top:2px;
+            padding-bottom:2px;
+        }
+        
+        #beiAnHaoXianShi{
+            position:fixed;
+            font-size:8px;
+            color:graytext;
+            bottom:16px;
+            text-decoration:none;
+            left:0;
+            right:0;
+        }
+        
+        .Paragraph{
+            font-size:16px;
+            text-indent:32px;
+            padding-left:6px;
+            padding-right:6px;
+        }
+    </style>
+    
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <title>我的手机应用</title>
+    </head>
+    
+    <body>
+    
+        <div class="TopBarFrame">
+            <div>
+                <div class="TopBarLogo">我的手机应用</div>
+                <nav id="nav">
+                    <span id="home" class="TopBarNav" onclick="navClick(0)">首页</span>|
+                    <span id="service" class="TopBarNav" onclick="navClick(1)">沟通交流</span>|
+                    <span id="contact" class="TopBarNav" onclick="navClick(2)">联系我们</span>
+                </nav>
+            </div>
+        </div>
+        
+        <div id="contentView"></div>
+        
+        <div style="text-align:center">
+            <a id="beiAnHaoXianShi" href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2023006718号-1</a>
+        </div>
+	</body>
+    
+    <script type="text/javascript">
+        var firstContent = "<p class=\"Paragraph\">现在的孩子们学业压力都很大，小学阶段还不明显，上了初中就是孩子累，家长也累的状态了。尤其是孩子中考一旦上不了高中，就只能分流，非常卷。作为家长的我，只能想一些方法来提高孩子的学习效率，以便让他们省出时间来做自己喜欢的事情，哪怕是多睡1个小时。于是，我就自己开发了一些手机应用，希望能在自己孩子求知的路上，助他们一臂之力。为了方便下载使用，我把它们放到了网上，其它有缘相见的家长如果需要，也可以下载使用。</p>";
+        var secondContent = "<p class=\"Paragraph\">相信作为家长的我们，为了帮孩子减负，让孩子取得好成绩，都会有自己的一些独特的方法和经验。欢迎大家相互探讨自己的好方法，共享好成果，让孩子们都取得进步。欢迎联系沟通。</p>";
+        var thirdContent = "<h5>微信交流</h5><p style=\"text-align:center;font-weight:bold;font-size:16px\">happy_tuoxie</p><h5>电子邮箱</h5><p style=\"text-align:center;font-weight:bold;font-size:16px\">aoyousatuo@sina.com</p>";
+        
+        contentView.innerHTML=firstContent
+        
+        function navClick(idx)
+        {
+            switch(idx)
+            {
+            case 0:
+                contentView.innerHTML=firstContent;
+                break;
+            case 1:
+                contentView.innerHTML=secondContent;
+                break;
+            case 2:
+                contentView.innerHTML=thirdContent;
+                break;
+            }
+        }
+    </script>
+	
+</html>
